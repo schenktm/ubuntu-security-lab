@@ -1,32 +1,69 @@
-## ubuntu-security-lab
-Secure Ubuntu server setup with SSH, sudo, UFW, Fail2Ban, Docker and nginx.
+# Ubuntu Security Lab
 
-Secure Ubuntu server setup for learning Linux, server hardening and basic infrastructure security.
+A practical Linux security lab for learning server administration, hardening and basic infrastructure security.
+
+This repository documents the setup of a small Ubuntu server with real commands, real outputs and short learning notes.
 
 ## Goal
 
-This project documents the setup of a hardened Ubuntu server.
+The goal of this project is to build and document a secure Ubuntu server step by step.
 
-Current Scope
+Focus areas:
 
-* Create non-root admin user
-* Configure sudo permissions
-* Prepare SSH key login
-* Disable direct root SSH login
-* Configure UFW firewall
-* Install and configure Fail2Ban
-* Install Docker
-* Run nginx in a container
+* Linux server basics
+* SSH key authentication
+* sudo user management
+* UFW firewall
+* Fail2Ban SSH protection
+* SSH hardening
+* Docker installation
+* nginx and web deployment later
 
-## Tools
+## Why this project exists
 
-* Ubuntu Server
-* SSH
-* UFW
-* Fail2Ban
-* Docker
-* nginx
+I use this repository as a hands-on learning lab.
+
+Instead of only reading theory, I configure a real server, check the results and document what each command does.
+
+## Current setup
+
+* Ubuntu server
+* Non-root admin user
+* SSH key login
+* Direct root SSH login blocked
+* UFW firewall enabled
+* Fail2Ban active for SSH
+* SSH hardening rules applied
+* Docker installed and tested
+
+## Documentation
+
+* [User and SSH setup](docs/user-ssh-setup.md)
+* [Firewall setup with UFW](docs/firewall-ufw-setup.md)
+* [Fail2Ban SSH protection](docs/fail2ban-ssh-protection.md)
+* [SSH hardening](docs/ssh-hardening.md)
+* [Docker installation](docs/docker-installation.md)
+
+## Skills demonstrated
+
+* Linux command line usage
+* User and permission management
+* SSH access control
+* Firewall configuration
+* Service checks with systemctl
+* Security logging and protection
+* Docker repository setup
+* Technical documentation in Markdown
 
 ## Status
 
 Work in progress.
+
+Next steps:
+
+* Run nginx in Docker
+* Create a shared project folder
+* Add Docker Compose
+* Deploy a small web application
+* Add monitoring and logs
+* Build a small security test lab
